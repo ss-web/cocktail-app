@@ -76,11 +76,11 @@ cocktail-app
 
 Include a brief description of each directory's purpose in your project.
 
-		root: Main directory containing all project-related files and folders.
-				assets: Directory for storing project assets like images, fonts, etc.
-				data: Directory for storing data files if applicable.
-				p-react: Directory for React project files.
-				p-vue: Directory for Vue project files.
-				services: Directory for backend services or shared utilities.
-				types: Directory for TypeScript type definitions.
-				utils: Directory for utility functions or helper scripts.
+	root: Main directory containing all project-related files and folders.
+		assets: Directory for storing project assets like images, fonts, etc.
+		data: Directory for storing data files if applicable.
+		p-react: Directory for React project files.
+		p-vue: Directory for Vue project files.
+		services: Directory for backend services or shared utilities.
+		types: Directory for TypeScript type definitions.
+		utils: Directory for utility functions or helper scripts.
