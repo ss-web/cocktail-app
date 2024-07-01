@@ -1,5 +1,5 @@
 {
-	"extends": "../../app.tsconfig.json",
+	"extends": "../app.tsconfig.json",
 	"compilerOptions": {
 		"baseUrl": ".",
 		"lib": ["es2015", "dom"],

@@ -9,7 +9,6 @@ COPY package.json yarn.lock ./
 RUN yarn
 
 # Копируем все файлы проекта внутрь контейнера
-COPY ../../app.tsconfig.json ./app.tsconfig.json
 COPY . .
 
 # Запускаем сборку и сборку Vite

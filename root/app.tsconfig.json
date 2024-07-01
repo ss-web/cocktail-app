@@ -6,7 +6,7 @@
 		"baseUrl": ".",
 		"paths": {
 			"@/*": ["./*"],
-			"~/*": ["./root/p-vue/src/*", "./root/p-react/src/*"]
+			"~/*": ["./p-vue/src/*", "./p-react/src/*"]
 		},
 		"moduleResolution": "node",
 		"strict": true,
