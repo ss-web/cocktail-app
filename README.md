@@ -67,7 +67,6 @@ cocktail-app
 	│	├── public/
 	│	├── src/
 	│	├── Dockerfile
-	│	├── Dockerfile
 	│	└── tsconfig.json
 	├── services
 	├── types

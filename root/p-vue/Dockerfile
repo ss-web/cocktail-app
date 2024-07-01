@@ -13,3 +13,5 @@ COPY . .
 
 # Запускаем сборку и сборку Vite
 RUN yarn build
+
+RUN yarn preview
