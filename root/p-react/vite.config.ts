@@ -8,9 +8,15 @@ export default defineConfig({
 	plugins: [react(),sass()],
 	server: {
 		port: 3001,
+		strictPort: true,
+		host: true,
 		fs: {
 			allow: ['../']
 		}
+	},
+	preview: {
+		port: 8081,
+		strictPort: true,
 	},
 	resolve: {
 		alias: {

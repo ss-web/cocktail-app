@@ -8,9 +8,15 @@ export default defineConfig({
 	plugins: [vue(),sass()],
 	server: {
 		port: 3000,
+		strictPort: true,
+		host: true,
 		fs: {
 			allow: ['../']
 		}
+	},
+	preview: {
+		port: 8080,
+		strictPort: true
 	},
 	resolve: {
 		alias: {

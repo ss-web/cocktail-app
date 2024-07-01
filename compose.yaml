@@ -1,18 +1,26 @@
 version: '3.8'
 
+volumes:
+  shared-data:
+    driver: local
+
 services:
   p-vue:
     build:
-      context: ./root/p-vue
+      context: .
+      dockerfile: ./root/p-vue/Dockerfile
     ports:
-      - "3000:3000"
+      - "8080:8080"
     volumes:
-      - ./root:/root
+      - type: volume
+        source: shared-data
+        target: /app
 
   p-react:
     build:
-      context: ./root/p-react
+      context: .
+      dockerfile: ./root/p-react/Dockerfile
     ports:
-      - "3001:3001"
+      - "8081:8081"
     volumes:
       - ./root:/root
