@@ -53,9 +53,9 @@ To run the project locally using Docker Compose:
 cocktail-app
 │	compose.yaml
 │	README.md
-│	tsconfig.json
 │
 └── root
+	├── app.tsconfig.json
 	├── assets
 	├── data
 	└── p-react
