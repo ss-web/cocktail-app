@@ -2,8 +2,8 @@
 
 This project is a web application that fetches cocktail data from an external API and displays it based on different cocktail codes. It consists of separate applications using React and Vue frameworks.
 
-- React App: Runs on port 3001
-- Vue App: Runs on port 3000
+- React App: Runs on port 8081
+- Vue App: Runs on port 8080
 
 ## Features
 
