@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  p-vue:
+    build:
+      context: ./root/p-vue
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./root/p-vue:/app
+
+  p-react:
+    build:
+      context: ./root/p-react
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./root/p-react:/app
