@@ -1,5 +1,5 @@
-import { cocktailCodes } from '@/data/cocktails';
-import { CocktailDetails } from '@/types/CocktailDetails';
+import { cocktailCodes } from '../data/cocktails';
+import { CocktailDetails } from '../types/CocktailDetails';
 
 const BASE_URL = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s='; // use dotenv .env in real project
 

@@ -1,4 +1,4 @@
-import { Cocktail } from '@/types/Cocktail';
+import { Cocktail } from '../types/Cocktail';
 
 export const cocktails: Cocktail[] = [
 	{ name: 'Margarita', code: 'margarita' },
