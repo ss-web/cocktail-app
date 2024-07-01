@@ -56,22 +56,22 @@ cocktail-app
 │	tsconfig.json
 │
 └── root
-		├── assets
-		├── data
-		└── p-react
-		│		├── public/
-		│		├── src/
-		│		├── Dockerfile
-		│		└── tsconfig.json
-		└── p-vue
-		│		├── public/
-		│		├── src/
-		│		├── Dockerfile
-		│		├── Dockerfile
-		│		└── tsconfig.json
-		├── services
-		├── types
-		└── utils
+	├── assets
+	├── data
+	└── p-react
+	│	├── public/
+	│	├── src/
+	│	├── Dockerfile
+	│	└── tsconfig.json
+	└── p-vue
+	│	├── public/
+	│	├── src/
+	│	├── Dockerfile
+	│	├── Dockerfile
+	│	└── tsconfig.json
+	├── services
+	├── types
+	└── utils
 ```
 ## Description
 
