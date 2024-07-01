@@ -2,7 +2,7 @@
 	"compilerOptions": {
 		"target": "esnext",
 		"module": "esnext",
-		"lib": ["es2015", "dom"], // Ensure 'es2015' is included in 'lib' option
+		"lib": ["es2015", "dom"],
 		"baseUrl": ".",
 		"paths": {
 			"@/*": ["./*"],
@@ -20,16 +20,16 @@
 	"files": [],
 	"references": [
 		{
-			"path": "./root/p-vue/tsconfig.app.json"
+			"path": "./p-vue/tsconfig.app.json"
 		},
 		{
-			"path": "./root/p-vue/tsconfig.node.json"
+			"path": "./p-vue/tsconfig.node.json"
 		},
 		{
-			"path": "./root/p-react/tsconfig.app.json"
+			"path": "./p-react/tsconfig.app.json"
 		},
 		{
-			"path": "./root/p-react/tsconfig.node.json"
+			"path": "./p-react/tsconfig.node.json"
 		}
 	]
 }

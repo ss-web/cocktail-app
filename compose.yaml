@@ -5,7 +5,7 @@ services:
     build:
       context: ./root/p-vue
     ports:
-      - "3001:3001"
+      - "3000:3000"
     volumes:
       - ./root/p-vue:/app
 
@@ -13,6 +13,6 @@ services:
     build:
       context: ./root/p-react
     ports:
-      - "3000:3000"
+      - "3001:3001"
     volumes:
       - ./root/p-react:/app
