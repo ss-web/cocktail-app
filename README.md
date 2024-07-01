@@ -45,7 +45,7 @@ To run the project locally using Docker Compose:
 	```bash
 	docker-compose up --build
 	```
-3. Access the React application at http://localhost:3000 and the Vue application at http://localhost:3001.
+3. Access the React application at http://localhost:8081 and the Vue application at http://localhost:8080.
 
 ## Project Structure
 
