@@ -146,9 +146,19 @@ body {
 
 @media (max-width: 800px) {
 	.app-aside{
-		position: fixed;
-		transition: .25s;
-		left: -280px;
+		min-width: 100%;
+		max-width: 100%;
+		&__nav{
+			flex-direction: row;
+			margin-bottom: 1em;
+			&--link:not(:last-child){
+				margin-bottom: 0;
+				padding-right: 1em;
+			}
+		}
+	}
+	.app-container{
+		flex-direction: column;
 	}
 }
 

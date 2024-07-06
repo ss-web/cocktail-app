@@ -1,8 +1,11 @@
 import { makeAutoObservable } from "mobx";
 import { cocktailService, CocktailCode } from '@/services/CocktailService';
+import { CocktailDetails } from '@/types/CocktailDetails';
+
+type Cocktails = Record<string, CocktailDetails[]>;
 
 class CocktailStore {
-	cocktails: any = {};
+	cocktails: Cocktails = {};
 	isLoading: boolean = false;
 	error: string | null = null;
 
