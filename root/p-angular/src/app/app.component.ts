@@ -3,7 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { AppAsideComponent } from '~/components/blocks/aside/aside.component';
 
 @Component({
-	selector: 'app-root',
+	selector: '[appRoot]',
 	standalone: true,
 	imports: [RouterOutlet, AppAsideComponent],
 	templateUrl: './app.component.html'

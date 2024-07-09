@@ -3,6 +3,6 @@
 		<h1 class="app-main__header--title">Drinks (angular)</h1>
 	</header>
 	<section class="app-main__drinks">
-		<app-cocktail *ngFor="let drink of cocktailData" [cocktail]="drink"></app-cocktail>
+		<article appCocktail *ngFor="let drink of cocktailData" [cocktail]="drink" class="app-article app-main__drinks--coctail"></article>
 	</section>
 </main>

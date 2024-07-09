@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
-	selector: 'app-not-found',
+	selector: '[appNotFound]',
 	standalone: true,
 	imports: [],
 	templateUrl: './not-found.component.html'

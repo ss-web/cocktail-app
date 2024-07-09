@@ -5,7 +5,7 @@ import { extractIngredients } from '@/utils/extractIngredients';
 import { CocktailDetails } from '@/types/CocktailDetails';
 
 @Component({
-	selector: 'app-cocktail',
+	selector: '[appCocktail]',
 	standalone: true,
 	imports: [NgForOf, NgClass, NgIf, ImageComponent],
 	templateUrl: './cocktail.component.html'

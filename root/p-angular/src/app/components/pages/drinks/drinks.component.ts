@@ -10,7 +10,7 @@ interface ApiResponse {
 }
 
 @Component({
-	selector: 'app-drinks',
+	selector: '[appDrinks]',
 	standalone: true,
 	imports: [NgForOf, NgClass, NgIf, CocktailComponent],
 	templateUrl: './drinks.component.html'

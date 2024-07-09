@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-	selector: 'app-image',
+	selector: '[appImage]',
 	standalone: true,
 	imports: [],
 	templateUrl: './image.component.html'

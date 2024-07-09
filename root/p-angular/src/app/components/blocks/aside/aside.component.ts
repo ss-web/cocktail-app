@@ -10,7 +10,7 @@ interface Cocktail {
 }
 
 @Component({
-	selector: 'app-aside',
+	selector: '[appAside]',
 	standalone: true,
 	imports: [NgForOf, NgClass, RouterModule],
 	templateUrl: './aside.component.html'
