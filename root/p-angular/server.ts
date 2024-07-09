@@ -5,11 +5,11 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join, resolve } from 'node:path';
 import bootstrap from './src/main.server';
 
-function modifyHtml(html: string): string {
-	// HACK for remove angular trash code
-	// TODO need to understand how to do it with default functional 
-	return html.replace(/<router-outlet[^>]*><\/router-outlet>/g, '<div></div>');
-}
+// function modifyHtml(html: string): string {
+// 	// HACK for remove angular trash code
+// 	// TODO need to understand how to do it with default functional 
+// 	return html.replace(/<router-outlet[^>]*><\/router-outlet>/g, '<div></div>');
+// }
 
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(): express.Express {
@@ -35,7 +35,7 @@ export function app(): express.Express {
 				publicPath: browserDistFolder,
 				providers: [{ provide: APP_BASE_HREF, useValue: baseUrl }],
 			})
-			.then((html) => res.send(modifyHtml(html)))
+			.then((html) => res.send(html))
 			.catch((err) => next(err));
 	});
 
