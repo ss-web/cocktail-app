@@ -14,3 +14,10 @@ services:
       dockerfile: ./root/p-react/Dockerfile
     ports:
       - "8081:8081"
+
+  # p-angular:
+  #   build:
+  #     context: .
+  #     dockerfile: ./root/p-angular/Dockerfile
+  #   ports:
+  #     - "8082:8082"

@@ -9,7 +9,8 @@ lerna-debug.log*
 
 node_modules
 .vscode
-root/p-angular
+# root/p-angular
+.angular
 dist
 dist-ssr
 *.local

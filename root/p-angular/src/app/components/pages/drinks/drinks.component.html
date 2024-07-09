@@ -1,0 +1,8 @@
+<main *ngIf="cocktailData" class="app-main">
+	<header class="app-main__header">
+		<h1 class="app-main__header--title">Drinks (angular)</h1>
+	</header>
+	<section class="app-main__drinks">
+		<app-cocktail *ngFor="let drink of cocktailData" [cocktail]="drink"></app-cocktail>
+	</section>
+</main>

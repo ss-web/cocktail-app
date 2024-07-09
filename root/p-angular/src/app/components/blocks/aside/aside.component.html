@@ -1,0 +1,10 @@
+<aside class="app-aside">
+	<nav class="app-aside__nav">
+		<a *ngFor="let cocktail of cocktails"
+			[routerLink]="['/', cocktail.code]"
+			class="app-aside__nav--link"
+			[ngClass]="{ 'active': isActive(cocktail.code) }">
+			{{ cocktail.name }}
+		</a>
+	</nav>
+</aside>
