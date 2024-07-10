@@ -5,12 +5,6 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join, resolve } from 'node:path';
 import bootstrap from './src/main.server';
 
-// function modifyHtml(html: string): string {
-// 	// HACK for remove angular trash code
-// 	// TODO need to understand how to do it with default functional 
-// 	return html.replace(/<router-outlet[^>]*><\/router-outlet>/g, '<div></div>');
-// }
-
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(): express.Express {
 	const server = express();
@@ -18,7 +12,7 @@ export function app(): express.Express {
 	const browserDistFolder = resolve(serverDistFolder, '../browser');
 	const indexHtml = join(serverDistFolder, 'index.server.html');
 
-	const commonEngine = new CommonEngine(); // TODO need to find other solution for SSR build and remove not semantic tags 
+	const commonEngine = new CommonEngine();
 
 	server.set('view engine', 'html');
 	server.set('views', browserDistFolder);
