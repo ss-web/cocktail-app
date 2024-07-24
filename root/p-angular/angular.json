@@ -33,7 +33,7 @@
             ],
             "styles": [
               "../assets/styles/reset.scss",
-              "../assets/styles/main.scss"
+              "../assets/styles/style.scss"
             ],
             "scripts": [],
             "server": "src/main.server.ts",

@@ -1,14 +1,14 @@
 <template>
-	<article v-if="cocktail" class="app-article">
-		<section class="app-article__block">
-			<h2 class="app-article__block--title">{{ cocktail.strDrink }}</h2>
-			<p><strong>Category:</strong> {{ cocktail.strCategory }}</p>
-			<p><strong>Alcoholic:</strong> {{ cocktail.strAlcoholic }}</p>
-			<p><strong>Glass:</strong> {{ cocktail.strGlass }}</p>
-			<p><strong>Instructions:</strong> {{ cocktail.strInstructions }}</p>
-			<h3 class="app-article__block--subtitle">Ingredients</h3>
-			<ul>
-				<li v-for="(v, index) in ingredients" :key="`${index}_image`">
+	<article v-if="cocktail" class="drinks__coctail">
+		<section class="article">
+			<h2 class="article__title">{{ cocktail.strDrink }}</h2>
+			<p class="article__paragraph"><strong class="article__strong">Category:</strong> {{ cocktail.strCategory }}</p>
+			<p class="article__paragraph"><strong class="article__strong">Alcoholic:</strong> {{ cocktail.strAlcoholic }}</p>
+			<p class="article__paragraph"><strong class="article__strong">Glass:</strong> {{ cocktail.strGlass }}</p>
+			<p class="article__paragraph"><strong class="article__strong">Instructions:</strong> {{ cocktail.strInstructions }}</p>
+			<h3 class="article__subtitle">Ingredients</h3>
+			<ul class="article__list">
+				<li v-for="(v, index) in ingredients" :key="`${index}_image`" class="article__list-item">
 					{{ v.name }} {{ v.measure }}
 				</li>
 			</ul>

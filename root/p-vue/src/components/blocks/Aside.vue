@@ -1,12 +1,12 @@
 <template>
-	<aside class="app-aside">
-		<nav class="app-aside__nav">
+	<aside class="aside">
+		<nav class="aside__nav">
 			<router-link
 				v-for="cocktail in cocktails"
 				:key="cocktail.code"
 				:to="`/${cocktail.code}`"
-				class="app-aside__nav--link"
-				:class="{ 'active': route.name === cocktail.code }
+				class="aside__nav__link"
+				:class="{ 'aside__nav__link--active': route.name === cocktail.code }
 			">
 				{{ cocktail.name }}
 			</router-link>

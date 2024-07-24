@@ -1,14 +1,14 @@
 <template>
-	<div class="app-container">
+  <section class="container">
 		<Aside />
 		<router-view />
 		<div v-if="isLoading">Loading...</div>
 		<div v-else-if="error">Error: {{ error }}</div>
-	</div>
-	<div class="app-footer app-container">
+	</section>
+	<footer class="footer">
 		<span>© 2024</span>
 		<span>ss-web</span>
-	</div>
+	</footer>
 </template>
 
 <script lang="ts" setup>

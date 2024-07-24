@@ -1,10 +1,10 @@
 <template>
-	<main class="app-main">
-		<header class="app-main__header">
-			<h1 class="app-main__header--title">Drinks (vue)</h1>
+	<main class="main">
+		<header class="main__header">
+			<h1 class="main__header__title">Drinks (vue)</h1>
 		</header>
-		<section class="app-main__drinks">
-			<Cocktail v-for="drink in drinks" :key="drink.idDrink" :cocktail="drink" class="app-main__drinks--coctail" />
+		<section class="drinks">
+			<Cocktail v-for="drink in drinks" :key="drink.idDrink" :cocktail="drink" />
 		</section>
 	</main>
 </template>

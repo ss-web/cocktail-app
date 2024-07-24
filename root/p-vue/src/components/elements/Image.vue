@@ -1,5 +1,5 @@
 <template>
-	<img v-lazy="lazyOptions" :alt="alt" class="app-image" />
+	<img v-lazy="lazyOptions" :alt="alt" class="image" />
 </template>
 
 <script setup lang="ts">
